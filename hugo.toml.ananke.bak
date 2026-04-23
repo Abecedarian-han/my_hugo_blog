@@ -1,0 +1,63 @@
+baseURL = "https://abcedarian.blog/"
+languageCode = "zh-cn"
+title = "Sayu 的博客"
+theme = "ananke"
+pagination.pagerSize = 6
+
+[params]
+  author = "Sayu"
+  description = "折腾设备、网络、代码与灵感记录"
+  site_logo = ""
+  background_color_class = "bg-black"
+  body_classes = "avenir bg-near-black"
+  featured_image = "/images/hero-main.jpg"
+  recent_posts_number = 6
+  show_reading_time = true
+  custom_css = ["custom.css"]
+
+[params.ananke.social.follow]
+  new_window_icon = false
+  networks = ["github"]
+
+[params.ananke.social.github]
+  username = "Abecedarian-han"
+
+[languages.zh-cn]
+  languageName = "中文"
+  weight = 1
+  title = "Sayu 的博客"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 3
+  [[menu.main]]
+    identifier = "email"
+    name = "邮箱"
+    url = "mailto:abecedarian.site@outlook.com"
+    weight = 4
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
